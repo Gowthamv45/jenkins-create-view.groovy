@@ -23,3 +23,4 @@ myView.doAddJobToView('MyJob3')
 
 // save current Jenkins state to disk
 jenkins.save()
+
