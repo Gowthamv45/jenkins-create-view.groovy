@@ -28,3 +28,4 @@ myView.getJobFilters().add(filter)
 
 // save current Jenkins state to disk
 jenkins.save()
+
