@@ -10,7 +10,7 @@ import hudson.views.StatusFilter
 Jenkins jenkins = Jenkins.getInstance()
 
 // variables
-def viewName = 'Programview6'
+def viewName = 'Programview5'
 
 // create the new view
 jenkins.addView(new ListView(viewName))
