@@ -12,7 +12,7 @@ org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get().approveSignatu
 Jenkins jenkins = Jenkins.getInstance()
 
 // variables
-def viewName = 'Programview7'
+def viewName = 'Programview8'
 
 // create the new view
 jenkins.addView(new ListView(viewName))
