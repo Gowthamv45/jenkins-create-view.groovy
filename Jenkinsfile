@@ -18,7 +18,7 @@ def viewName = 'Programview8'
 jenkins.addView(new ListView(viewName))
 
 // get the view
-myView = hudson.model.Hudson.instance.getView(viewName)
+ListView = hudson.model.Hudson.instance.getView(viewName)
 
 //List<BuildStatusFilter> expectedFilters = new ArrayList<BuildStatusFilter>()
 //def filter = new BuildStatusFilter(true,false,false,"includeMatched")
