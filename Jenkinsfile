@@ -28,7 +28,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 //Add job status filter
 List<JobStatusFilter> expectedFilters = new ArrayList<JobStatusFilter>()
-def filter = new JobStatusFilter(true,false,false,false"includeMatched")
+def filter = new JobStatusFilter(true,false,false,false,"includeMatched")
 myView.getJobFilters().add(filter)
 
 // save current Jenkins state to disk
