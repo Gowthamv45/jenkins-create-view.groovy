@@ -13,7 +13,7 @@ import hudson.views.JobStatusFilter
 Jenkins jenkins = Jenkins.getInstance()
 
 // variables
-def viewName = 'Programview10'
+def viewName = 'Programview9'
 
 // create the new view
 jenkins.addView(new ListView(viewName))
@@ -27,15 +27,15 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter)
 
 //Add jobstatusfilter
-List<JobStatusFilter> expectedFilters = new ArrayList<JobStatusFilter>()
-def filter = new JobStatusFilter(true,false,false,false,false,"includeMatched")
-myView.getJobFilters().add(filter)
-
-//Add Filter MostRecentJobsFilter
-//List<TopLevelItem> filtered = new ArrayList<TopLevelItem>(added)
-//List<TopLevelItem> addedJobs = asList(allJobs.get(2))
-//def filter = new MostRecentJobsFilter(true)
+//List<JobStatusFilter> expectedFilters = new ArrayList<JobStatusFilter>()
+//def filter = new JobStatusFilter(true,false,false,false,false,"includeMatched")
 //myView.getJobFilters().add(filter)
+
+//Add  MostRecentJobsFilter
+//List<TopLevelItem> filtered = new ArrayList<TopLevelItem>(added)
+List<MostRecentJobsFilter> addedJobs = asList(allJobs.get(2))
+def filter = new MostRecentJobsFilter(true)
+myView.getJobFilters().add(filter)
 
 // save current Jenkins state to disk
 jenkins.save()
