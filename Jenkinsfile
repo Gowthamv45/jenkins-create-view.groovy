@@ -4,7 +4,6 @@
 import jenkins.model.Jenkins
 import hudson.model.ListView
 import hudson.views.BuildStatusFilter
-import hudson.views.JobType
 import hudson.views.JobStatusFilter
 //import hudson.views.StatusFilter
 //def signature = 'new groovy.json.JsonSlurperClassic'
