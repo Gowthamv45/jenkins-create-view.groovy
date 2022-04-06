@@ -4,7 +4,7 @@
 import jenkins.model.Jenkins
 import hudson.model.ListView
 import hudson.views.BuildStatusFilter
-//import hudson.views.JobStatusFilter
+import hudson.views.JobStatusFilter
 //import hudson.views.StatusFilter
 //def signature = 'new groovy.json.JsonSlurperClassic'
 //org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get().approveSignature(signature)
@@ -27,7 +27,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter)
 
 //Add job status filter
-List<JobStatusFilter> expectedFilters = new ArrayList<JobStatusFilter>()
+//List<JobStatusFilter> expectedFilters = new ArrayList<JobStatusFilter>()
 def filter = new JobStatusFilter(true,false,false,false,"includeMatched")
 myView.getJobFilters().add(filter)
 
