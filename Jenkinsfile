@@ -37,7 +37,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 //Add Build Trend Filter
 List<BuildTrendFilter> expectedFilters = new ArrayList<BuildTrendFilter>()
-def filter = new BuildTrendFilter("Latest build was","Completed",24,"Hours","includeMatched")
+def filter = new BuildTrendFilter("","",24,"","includeMatched")
 //def filter = new BuildTrendFilter("","","","","includeMatched")
 myView.getJobFilters().add(filter)
 
