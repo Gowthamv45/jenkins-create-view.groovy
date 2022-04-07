@@ -6,7 +6,7 @@ import hudson.model.ListView
 import hudson.views.BuildStatusFilter
 import hudson.views.JobStatusFilter
 import hudson.views.BuildTrendFilter
-import hudson.views.FavoritesFilter
+//import hudson.views.FavoritesFilter
 import hudson.views.JobTypeFilter
 import hudson.views.AddRemoveFallbackFilter
 import hudson.views.MostRecentJobsFilter
@@ -65,8 +65,8 @@ myView.getJobFilters().add(filter1)
 
 //Add Favorites Filter
 //List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
-def filter = new FavoritesFilter()
-myView.getJobFilters().add(filter)
+//def filter = new FavoritesFilter()
+//myView.getJobFilters().add(filter)
 
 
 
