@@ -49,7 +49,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //Add  MostRecentJobsFilter
 List<MostRecentJobsFilter> filtered = new ArrayList<MostRecentJobsFilter>()
 //List<MostRecentJobsFilter> addedJobs = asList(allJobs.get(2))
-def filter = new MostRecentJobsFilter("4")
+def filter = new MostRecentJobsFilter("4",true)
 myView.getJobFilters().add(filter)
 
 // save current Jenkins state to disk
