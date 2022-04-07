@@ -31,9 +31,9 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter)
 
 //Add jobstatusfilter
-//List<JobStatusFilter> expectedFilters = new ArrayList<JobStatusFilter>()
-//def filter = new JobStatusFilter(true,false,false,false,false,"includeMatched")
-//myView.getJobFilters().add(filter)
+List<JobStatusFilter> expectedFilters = new ArrayList<JobStatusFilter>()
+def filter = new JobStatusFilter(true,false,false,false,false,"includeMatched")
+myView.getJobFilters().add(filter)
 
 //Add Build Trend Filter
 //List<BuildTrendFilter> expectedFilters = new ArrayList<BuildTrendFilter>()
