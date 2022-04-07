@@ -6,7 +6,7 @@ import hudson.model.ListView
 import hudson.views.BuildStatusFilter
 import hudson.views.JobStatusFilter
 import hudson.views.BuildTrendFilter
-//import hudson.views.FallbackFilter
+import hudson.views.AddRemoveFallbackFilter
 import hudson.views.MostRecentJobsFilter
 
 //import hudson.views.StatusFilter
@@ -42,7 +42,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter)
 
 //Add Fallback Filter
-def filter = new FallbackFilter("true")
+def filter = new AddRemoveFallbackFilter("Add all jobs if no jobs are included")
 myView.getJobFilters().add(filter)
 
 //Add  MostRecentJobsFilter
