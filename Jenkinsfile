@@ -54,9 +54,9 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter)
 
 //Add  SCM Type Filter
-List<ScmTypeFilter> filtered = new ArrayList<ScmTypeFilter>()
-def filter1 = new ScmTypeFilter("none","includeMatched")
-myView.getJobFilters().add(filter1)
+//List<ScmTypeFilter> filtered = new ArrayList<ScmTypeFilter>()
+//def filter1 = new ScmTypeFilter("none","includeMatched")
+//myView.getJobFilters().add(filter1)
 
 //Add Build Trend Filter
 //List<BuildTrendFilter> expectedFilters = new ArrayList<BuildTrendFilter>()
@@ -65,9 +65,9 @@ myView.getJobFilters().add(filter1)
 //myView.getJobFilters().add(filter)
 
 //Add Fallback Filter
-//List<AddRemoveFallbackFilter> filtered = new ArrayList<AddRemoveFallbackFilter>()
-//def filter = new AddRemoveFallbackFilter("Remove all jobs if all jobs are included")
-//myView.getJobFilters().add(filter)
+List<AddRemoveFallbackFilter> filtered = new ArrayList<AddRemoveFallbackFilter>()
+def filter = new AddRemoveFallbackFilter("Remove all jobs if all jobs are included")
+myView.getJobFilters().add(filter)
 
 //Add Favorites Filter
 //List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
