@@ -42,7 +42,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter)
 
 //Add Fallback Filter
-List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
+List<FallbackFilter> expectedFilters = new ArrayList<FallbackFilter>()
 def filter = new FallbackFilter("Add all jobs if no jobs are included")
 myView.getJobFilters().add(filter)
 
