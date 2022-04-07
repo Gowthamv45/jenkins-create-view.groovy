@@ -6,7 +6,7 @@ import hudson.model.ListView
 import hudson.views.BuildStatusFilter
 import hudson.views.JobStatusFilter
 import hudson.views.BuildTrendFilter
-import hudson.views.FallbackFilter
+//import hudson.views.FallbackFilter
 import hudson.views.MostRecentJobsFilter
 
 //import hudson.views.StatusFilter
