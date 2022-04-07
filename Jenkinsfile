@@ -17,7 +17,7 @@ import hudson.views.MostRecentJobsFilter
 Jenkins jenkins = Jenkins.getInstance()
 
 // variables
-def viewName = 'Programview9'
+def viewName = 'Programview10'
 
 // create the new view
 jenkins.addView(new ListView(viewName))
@@ -37,7 +37,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 //Add Build Trend Filter
 List<BuildTrendFilter> expectedFilters = new ArrayList<BuildTrendFilter>()
-def filter = new BuildTrendFilter("Latestbuildwas","Completed",24,"Hours","includeMatched")
+def filter = new BuildTrendFilter("Latest build was","Completed",24,"Hours","includeMatched")
 //def filter = new BuildTrendFilter("","","","","includeMatched")
 myView.getJobFilters().add(filter)
 
