@@ -49,8 +49,8 @@ myView.getJobFilters().add(filter)
 //Add  MostRecentJobsFilter
 List<MostRecentJobsFilter> filtered = new ArrayList<MostRecentJobsFilter>()
 //List<MostRecentJobsFilter> addedJobs = asList(allJobs.get(2))
-def filter = new MostRecentJobsFilter("4",true)
-myView.getJobFilters().add(filter)
+def filter1 = new MostRecentJobsFilter("4",true)
+myView.getJobFilters().add(filter1)
 
 // save current Jenkins state to disk
 jenkins.save()
