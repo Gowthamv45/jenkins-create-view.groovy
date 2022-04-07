@@ -43,8 +43,8 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter)
 
 //Add Fallback Filter
-List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
-def filter = new AddRemoveFallbackFilter("")
+//List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
+def filter = new AddRemoveFallbackFilter(true)
 myView.getJobFilters().add(filter)
 
 //Add  MostRecentJobsFilter
