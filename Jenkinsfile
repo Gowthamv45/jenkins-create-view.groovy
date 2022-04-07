@@ -36,15 +36,15 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter)
 
 //Add Build Trend Filter
-//List<BuildTrendFilter> expectedFilters = new ArrayList<BuildTrendFilter>()
-//def filter = new BuildTrendFilter("Latestbuildwas","Completed","24","Hours","includeMatched")
+List<BuildTrendFilter> expectedFilters = new ArrayList<BuildTrendFilter>()
+def filter = new BuildTrendFilter("Latestbuildwas","Completed",24,"Hours","includeMatched")
 //def filter = new BuildTrendFilter("","","","","includeMatched")
-//myView.getJobFilters().add(filter)
+myView.getJobFilters().add(filter)
 
 //Add Fallback Filter
-List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
-def filter = new AddRemoveFallbackFilter("Add all jobs if no jobs are included")
-myView.getJobFilters().add(filter)
+//List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
+//def filter = new AddRemoveFallbackFilter("Add all jobs if no jobs are included")
+//myView.getJobFilters().add(filter)
 
 //Add  MostRecentJobsFilter
 //List<TopLevelItem> filtered = new ArrayList<TopLevelItem>(added)
