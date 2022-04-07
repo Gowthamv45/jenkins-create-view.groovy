@@ -49,7 +49,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 //Add  Job Type Filter
 List<JobTypeFilter> filtered = new ArrayList<JobTypeFilter>()
-def filter1 = new JobTypeFilter("Folder","includeMatched")
+def filter1 = new JobTypeFilter("Freestyle project","includeMatched")
 myView.getJobFilters().add(filter1)
 
 //Add Build Trend Filter
