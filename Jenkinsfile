@@ -26,8 +26,13 @@ jenkins.addView(new ListView(viewName))
 // get the view
 myView = hudson.model.Hudson.instance.getView(viewName)
 
+
+//Add BuildStatusFilter
 //List<BuildStatusFilter> expectedFilters = new ArrayList<BuildStatusFilter>()
 //def filter = new BuildStatusFilter(true,false,false,"includeMatched")
+//myView.getJobFilters().add(filter)
+
+//Add StatusFilter
 //def filter = new StatusFilter(true)
 //myView.getJobFilters().add(filter)
 
@@ -35,6 +40,11 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //List<JobStatusFilter> expectedFilters = new ArrayList<JobStatusFilter>()
 //def filter = new JobStatusFilter(true,false,false,false,false,"includeMatched")
 //myView.getJobFilters().add(filter)
+
+//Add  MostRecentJobsFilter
+//List<MostRecentJobsFilter> filtered = new ArrayList<MostRecentJobsFilter>()
+//def filter1 = new MostRecentJobsFilter(4,true)
+//myView.getJobFilters().add(filter1)
 
 //Add Build Trend Filter
 //List<BuildTrendFilter> expectedFilters = new ArrayList<BuildTrendFilter>()
@@ -44,14 +54,10 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 //Add Fallback Filter
 //List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
-def filter = new AddRemoveFallbackFilter(true)
+def filter = new FallbackFilter(true)
 myView.getJobFilters().add(filter)
 
-//Add  MostRecentJobsFilter
-//List<MostRecentJobsFilter> filtered = new ArrayList<MostRecentJobsFilter>()
-//List<MostRecentJobsFilter> addedJobs = asList(allJobs.get(2))
-//def filter1 = new MostRecentJobsFilter(4,true)
-//myView.getJobFilters().add(filter1)
+
 
 // save current Jenkins state to disk
 jenkins.save()
