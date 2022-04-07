@@ -65,8 +65,8 @@ myView.getJobFilters().add(filter1)
 //myView.getJobFilters().add(filter)
 
 //Add Fallback Filter
-//List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
-//def filter = new AddRemoveFallbackFilter("")
+//List<AddRemoveFallbackFilter> filtered = new ArrayList<AddRemoveFallbackFilter>()
+//def filter = new AddRemoveFallbackFilter("Remove all jobs if all jobs are included")
 //myView.getJobFilters().add(filter)
 
 //Add Favorites Filter
