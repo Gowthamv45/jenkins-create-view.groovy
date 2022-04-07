@@ -60,8 +60,8 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 //Add Build Trend Filter
 List<BuildTrendFilter> filtered = new ArrayList<BuildTrendFilter>()
-//def filter = new BuildTrendFilter("","","","","")
-def filter = new BuildTrendFilter("","","","","includeMatched")
+def filter = new BuildTrendFilter("","","","","")
+//def filter = new BuildTrendFilter("","","","","includeMatched")
 myView.getJobFilters().add(filter)
 
 //Add Fallback Filter
