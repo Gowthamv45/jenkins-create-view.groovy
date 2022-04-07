@@ -54,7 +54,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 //Add Fallback Filter
 //List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
-def filter = new FallbackFilter(true)
+def filter = new FallbackFilter("Remove all jobs if all jobs are included")
 myView.getJobFilters().add(filter)
 
 
