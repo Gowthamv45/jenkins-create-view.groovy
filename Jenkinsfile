@@ -5,7 +5,7 @@ import jenkins.model.Jenkins
 import hudson.model.ListView
 import hudson.views.BuildStatusFilter
 import hudson.views.JobStatusFilter
-import hudson.views.BuildTrendFilter
+//import hudson.views.BuildTrendFilter
 import hudson.views.BuildDurationFilter
 //import hudson.views.FavoritesFilter
 import hudson.views.JobTypeFilter
