@@ -59,10 +59,10 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter1)
 
 //Add Build Trend Filter
-List<BuildTrendFilter> filtered = new ArrayList<BuildTrendFilter>()
-def filter = new BuildTrendFilter("","","","","")
+//List<BuildTrendFilter> filtered = new ArrayList<BuildTrendFilter>()
+//def filter = new BuildTrendFilter("","","","","")
 //def filter = new BuildTrendFilter("","","","","includeMatched")
-myView.getJobFilters().add(filter)
+//myView.getJobFilters().add(filter)
 
 //Add Fallback Filter
 //List<AddRemoveFallbackFilter> filtered = new ArrayList<AddRemoveFallbackFilter>()
@@ -70,9 +70,9 @@ myView.getJobFilters().add(filter)
 //myView.getJobFilters().add(filter)
 
 //Add Favorites Filter
-//List<AddRemoveFallbackFilter> expectedFilters = new ArrayList<AddRemoveFallbackFilter>()
-//def filter = new FavoritesFilter()
-//myView.getJobFilters().add(filter)
+//List<AddRemoveFallbackFilter> filtered = new ArrayList<AddRemoveFallbackFilter>()
+def filter = new FavoritesFilter()
+myView.getJobFilters().add(filter)
 
 
 
