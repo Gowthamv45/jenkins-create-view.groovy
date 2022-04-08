@@ -6,7 +6,8 @@ import hudson.model.ListView
 import hudson.views.BuildStatusFilter
 import hudson.views.JobStatusFilter
 import hudson.views.BuildTrendFilter
-//import hudson.views.FavoritesFilter
+import hudson.views.BuildDurationFilter
+import hudson.views.FavoritesFilter
 import hudson.views.JobTypeFilter
 import hudson.views.ScmTypeFilter
 import hudson.views.AddRemoveFallbackFilter
@@ -58,6 +59,11 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //def filter1 = new ScmTypeFilter("none","includeMatched")
 //myView.getJobFilters().add(filter1)
 
+//Add BuildDurationFilter
+List<BuildDurationFilter> filtered = new ArrayList<BuildDurationFilter>()
+def filter = new BuildTrendFilter("","","","","","includeMatched")
+myView.getJobFilters().add(filter)
+
 //Add Build Trend Filter
 //List<BuildTrendFilter> filtered = new ArrayList<BuildTrendFilter>()
 //def filter = new BuildTrendFilter("","","","","")
@@ -71,8 +77,8 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 //Add Favorites Filter
 //List<AddRemoveFallbackFilter> filtered = new ArrayList<AddRemoveFallbackFilter>()
-def filter = new FavoritesFilter()
-myView.getJobFilters().add(filter)
+//def filter = new FavoritesFilter()
+//myView.getJobFilters().add(filter)
 
 
 
