@@ -60,7 +60,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //myView.getJobFilters().add(filter1)
 
 //Add BuildDurationFilter
-List<BuildDurationFilter> filtered = new ArrayList<BuildDurationFilter>()
+List<BuildDurationFilter> expectedFilters = new ArrayList<BuildDurationFilter>()
 def filter = new BuildDurationFilter("","","","","","includeMatched")
 myView.getJobFilters().add(filter)
 
