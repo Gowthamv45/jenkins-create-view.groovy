@@ -12,6 +12,7 @@ import hudson.views.JobTypeFilter
 import hudson.views.ScmTypeFilter
 import hudson.views.AddRemoveFallbackFilter
 import hudson.views.MostRecentJobsFilter
+import hudson.views.UpstreamDownstreamJobsFilter
 
 //import hudson.views.StatusFilter
 //def signature = 'new groovy.json.JsonSlurperClassic'
@@ -59,10 +60,15 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 //def filter1 = new ScmTypeFilter("none","includeMatched")
 //myView.getJobFilters().add(filter1)
 
-//Add BuildDurationFilter
-List<BuildDurationFilter> expectedFilters = new ArrayList<BuildDurationFilter>()
-def filter = new BuildDurationFilter("","","","","","includeMatched")
+//Add UpstreamDownstreamJobsFilter
+List<UpstreamDownstreamJobsFilter> expectedFilters = new ArrayList<UpstreamDownstreamJobsFilter>()
+def filter = new UpstreamDownstreamJobsFilter(true,false,false,false)
 myView.getJobFilters().add(filter)
+
+//Add BuildDurationFilter
+//List<BuildDurationFilter> expectedFilters = new ArrayList<BuildDurationFilter>()
+//def filter = new BuildDurationFilter("","","","","","includeMatched")
+//myView.getJobFilters().add(filter)
 
 //Add Build Trend Filter
 //List<BuildTrendFilter> filtered = new ArrayList<BuildTrendFilter>()
